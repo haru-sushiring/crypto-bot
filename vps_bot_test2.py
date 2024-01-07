@@ -212,10 +212,10 @@ def main():
     ticker = bitbank_price.fetch_ticker('MATIC/JPY')
     current_price = ticker['last']
     buy_price, buy_flg, sell_price, sell_flg = execute_trade(df, int(current_price), buy_price, buy_flg, sell_price, sell_flg)
-    print(f"buy_price:{buy_price}")
-    print(f"buy_flg:{buy_flg}")
-    print(f"sell_price:{sell_price}")
-    print(f"sell_flg:{sell_flg}")
+    # print(f"buy_price:{buy_price}")
+    # print(f"buy_flg:{buy_flg}")
+    # print(f"sell_price:{sell_price}")
+    # print(f"sell_flg:{sell_flg}")
 
     # 環境変数を更新
     update_env_file(env_path, 'BUY_FLG', buy_flg)

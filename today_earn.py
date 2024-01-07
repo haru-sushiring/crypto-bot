@@ -70,4 +70,4 @@ message = f'今日の収益: {total_sell_profit:.2f} JPY'
 response = requests.post(line_notify_api, headers=headers, data={'message': message})
 
 # 応答の確認
-print(response.status_code)
+# print(response.status_code)
